@@ -1,3 +1,7 @@
+	                                  DAY 4 TASK						
+			
+PROGRAMS FOR ANONYMUS AND IIFE FUNCTION:
+
 1.)Print Odd numbers in a array
 
 var a=[1,2,3,4,5,6,7,8,9,10];
