@@ -1,0 +1,117 @@
+1.)
+
+var json = [{
+    "id" : "Gowtham R", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "gothammelo27@gmail.com"
+},
+{
+    "id" : "Gowtham 2", 
+    "msg"   : "For the given JSON iterate over all for loops (for, for in, for of, forEach)",
+    "task" : "zen portal task",
+    "mail": "gothammelo127@gmail.com"
+}];
+
+//for loop
+
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+
+//for Each
+
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+
+for (var key in json) {
+if (json.hasOwnProperty(key)) {
+  console.log(json[key].id);
+  //console.log(json[key].msg);
+ 
+}
+}
+
+//for Of
+
+let text = "";
+for (let x of json[key].id) {
+ text += x; 
+}
+ console.log(text);
+
+
+
+2.) CREATING RESUME USING JSON FORMAT:
+
+
+
+
+
+let myResume={
+    "basics": {
+      "name": "GOWTHAM R",
+      "email": "gothammelo27@gamil.com",
+      "phone": 7010917342,
+      "degree": "B.Sc ,M.Sc",
+      "location": {
+        "address": "1/256 A , M.P.R Street, Avinashi",
+        "postalCode": 641654,
+        "city": "Tiruppur",
+        "state": "Tamilnadu",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/gowtham-r-bb6642198",
+          "github":"https://github.com/Gowtham271199"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "COMCAST",
+        "position": "Ad Operations analyst",
+        "startDate": "2022-06-29",
+        "summary": "i am the Ad Operatiosns Analyst handling various tasks and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "PSG College of Arts and Science",
+        "department": "Microbilogy, Environmental science",
+        "studyType": "fulltime",
+        "batch start year": 2017,
+        "batch end year": 2022,
+        "gpa": 8.0,
+      }
+    ],
+    "skills": [
+      {
+        "name": "Html , Css, javascript",
+        "level": "beginer",
+        "project":[
+          "Mushroom Cultivation and Production"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Tamil,English",
+      }
+    ],
+    "interests": [
+      {
+        "name": "Reading books,playing outdoor games,",
+      }
+    ]
+  }
+  console.log(myResume);
+  
